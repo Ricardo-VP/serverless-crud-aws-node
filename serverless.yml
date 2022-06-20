@@ -42,6 +42,12 @@ functions:
       - httpApi:
           path: /tasks/{id}
           method: put
+  deleteTask:
+    handler: src/deleteTask.deleteTask
+    events:
+      - httpApi:
+          path: /tasks/{id}
+          method: delete
 
 resources:
   Resources:
